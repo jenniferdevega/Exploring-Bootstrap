@@ -13,3 +13,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+    h2{
+        font-size:40px;
+    }
+}
