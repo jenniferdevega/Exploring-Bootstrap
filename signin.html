@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Bookstore</title>
+    <title>Login</title>
 
     <!-- Start of Reference: Bootstrap -->
     <link
@@ -93,7 +93,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-light" href="#contact"
+                <a class="nav-link active text-light" href="contactus.html"
                   >Contact</a
                 >
               </li>
@@ -165,40 +165,12 @@
         <br />
       </div>
 
-      <!-- Start of Contact Us -->
+      <!-- Start of Sign In -->
       <section id="contact" class="container">
         <div class="card">
-          <h5 class="card-header">Contact Us</h5>
+          <h5 class="card-header">Sign In or Create An Account</h5>
           <div class="card-body">
-            <form class="align-content-center">
-              <div class="form-group">
-                <label for="firstName">Enter First Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="firstName"
-                  aria-describedby="firstNameHelp"
-                  placeholder="Jennifer"
-                  required
-                />
-              </div>
-
-              <br />
-
-              <div class="form-group">
-                <label for="lastName">Enter Last Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lastName"
-                  aria-describedby="lastNameHelp"
-                  placeholder="De Vega"
-                  required
-                />
-              </div>
-
-              <br />
-
+            <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Enter Email address</label>
                 <input
@@ -217,23 +189,56 @@
               <br />
 
               <div class="form-group">
-                <label for="message">Enter Message</label>
-                <textarea
+                <label for="password">Password</label>
+                <input
+                  type="password"
                   class="form-control"
-                  id="message"
-                  name="message"
-                  placeholder="Enter a message here"
-                  rows="5"
+                  id="password"
+                  aria-describedby="passwordHelp"
                   required
-                ></textarea>
+                />
               </div>
               <br />
-              <button type="submit" class="btn btn-dark">Submit</button>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="check"
+                  checked
+                />
+                <label class="form-check-label" for="check">Remember Me</label>
+              </div>
+              <br />
+              <br />
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <button type="submit" class="btn btn-dark">
+                    Sign In and Continue
+                  </button>
+                </div>
+                <div class="col-sm-6">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    onclick="window.location.href = 'createaccount.html';"
+                  >
+                    Create An Account
+                  </button>
+                </div>
+              </div>
+
+              <br />
+              <br />
+              <small
+                >By signing in you are agreeing to our <u>Terms of Use</u> and
+                our <u>Privacy Policy</u></small
+              >
             </form>
           </div>
         </div>
       </section>
-      <!-- End of Contact Us -->
+      <!-- End of Sign In -->
     </main>
     <!-- End of main -->
 
@@ -265,6 +270,7 @@
     <script>
       AOS.init();
     </script>
+
     <!-- End of Reference: javascript -->
   </body>
 </html>
