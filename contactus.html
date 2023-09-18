@@ -23,7 +23,7 @@
     <header id="home">
       <nav class="navbar navbar-expand-lg bg-black fixed-top shadow">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#home">
+          <a class="navbar-brand" href="bootstrap-practice.html">
             <img
               src="images/logo.png"
               alt="Barnes & Nobles"
@@ -79,11 +79,15 @@
               <a
                 class="nav-link active text-light"
                 aria-current="page"
-                href="#home"
+                href="bootstrap-practice.html"
                 >Home</a
               >
               <li class="nav-item">
-                <a class="nav-link active text-light" href="#about">About</a>
+                <a
+                  class="nav-link active text-light"
+                  href="bootstrap-practice.html#about"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link active text-light" href="services.html"
@@ -91,7 +95,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-light" href="contactus.html"
+                <a class="nav-link active text-light" href="#contact"
                   >Contact</a
                 >
               </li>
@@ -134,91 +138,75 @@
         <br />
       </div>
 
-      <!-- Start of Carousel -->
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <!-- 1st carousel image -->
-            <img
-              src="images/html.jpg"
-              class="d-block w-100 img-fluid rounded"
-              alt="HTML5"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <span>HTML5</span>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!-- 2nd carousel image -->
-            <img src="images/css.jpg" class="d-block w-100" alt="HTML & CSSk" />
-            <div class="carousel-caption d-none d-md-block">
-              <span>HTML & CSS</span>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!-- 3rd carousel image -->
-            <img
-              src="images/bootstrap.png"
-              class="d-block w-100"
-              alt="Bootstrap"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <span>Bootstrap 5</span>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- End of Carousel -->
+      <!-- Start of Contact Us -->
+      <section id="contact" class="container">
+        <div class="card">
+          <h5 class="card-header">Contact Us</h5>
+          <div class="card-body">
+            <form class="align-content-center">
+              <div class="form-group">
+                <label for="firstName">Enter First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  aria-describedby="firstNameHelp"
+                  placeholder="Jennifer"
+                  required
+                />
+              </div>
 
-      <br />
-      <br />
+              <br />
 
-      <!-- Start of About  -->
-      <section id="about" class="container">
-        <h2 class="text-right mb-5">About Us</h2>
-        <img src="images/aboutus.jpg" alt="Store Front" class="img-fluid" />
+              <div class="form-group">
+                <label for="lastName">Enter Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  aria-describedby="lastNameHelp"
+                  placeholder="De Vega"
+                  required
+                />
+              </div>
+
+              <br />
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Enter Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="name@domain.com"
+                  required
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+
+              <br />
+
+              <div class="form-group">
+                <label for="message">Enter Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  placeholder="Enter a message here"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <br />
+              <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+          </div>
+        </div>
       </section>
-      <!-- End of About -->
+      <!-- End of Contact Us -->
     </main>
     <!-- End of main -->
 
